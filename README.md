@@ -1,24 +1,26 @@
-Для начала расскажу о входных параметрах командной строки.
+# GAME INSTRUCTION
 
-Если параметры отсутствуют, то все 9 штук будут задаваться через консоль ручками.
+First, I'll tell you about the command line input parameters.
 
-Если присутствую 2 параметра, размеры океана, то недуостающие 7 задаются через консоль.
+If there are no parameters, then all 9 pieces will be set via the console with knobs.
 
-Если в наличии 5 параметров, то они принимаются за параметры флота, то есть задают количество кораблей каждого типа. В таком случае игроку необходимо будет добавить в консоли 4 параметра, размеры поля и всякие игровые модификации, обе из которых у меня, так между словом, осуществлены.
+If there are 2 parameters, the size of the ocean, then the missing 7 are set via the console.
 
-Если параметров 9, то есть все, то все ок, ничего с консоли вводить не придется.
+If there are 5 parameters, then they are taken as the parameters of the fleet, that is, they set the number of ships of each type. In this case, the player will need to add 4 parameters to the console, the size of the field and all sorts of game modifications, both of which I have, between a word, implemented.
 
-А еже ли параметр один и он выглядит как то так  -  'exit', то происходит выход.
+If there are 9 parameters, that is, everything, then everything is ok, you will not have to enter anything from the console.
 
-Далее будут проводится проверки на эти параметры и если они окажутся некорректными, то программа вежливо, на английском, попросит игрока задать их заново но уже целиком и полностью через консоль.
+And if there is only one parameter and it looks something like this - 'exit', then an exit occurs.
 
-!!!ВАЖНО!!!
-	С начала выбираем номер строки - x, а потом столбец - y.
+Next, checks will be carried out for these parameters and if they turn out to be incorrect, then the program politely, in English, will ask the player to set them again, but completely and completely through the console.
 
-Теперь перенесемся к командам:
+!!! IMPORTANT !!!
+From the beginning we select the row number - x, and then the column - y.
 
-- attack x y  -  ну ту понятно, обычная атака по клетке (x y)
-- attack -T x y  -  атака с торпедой
-- show_fleet  -  показывает расстановку кораблей в океане. В хелпе я это не указал, тк эта комманда больше для тестинга чем для игры.
-- help  -  вывод справки по командам
-- exit - понятно, выход)
+Now let's move on to the commands:
+
+- attack x y - well, that's understandable, the usual attack on the cell (x y)
+- attack -T x y - attack with a torpedo
+- show_fleet - shows the arrangement of ships in the ocean. In the help, I did not indicate this, because this command is more for testing than for playing.
+- help - displays help for commands
+- exit - it's clear, exit)
